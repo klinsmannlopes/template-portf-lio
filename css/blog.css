@@ -1,0 +1,21 @@
+.leia-mais {
+    padding: .5em;
+    margin: 1em;
+    display: block;
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #E6E7E8;
+}
+
+.post-blog {
+    padding-bottom: 1.5em;
+    background-image: linear-gradient(to right, transparent, #000, transparent);
+    background-size: 100% 1px;
+    background-repeat: no-repeat;
+    background-position: 50% bottom;
+    margin-bottom: 1em;
+}
+
+.post-blog ~ .post-blog + .post-blog {
+    background-image: none;
+}

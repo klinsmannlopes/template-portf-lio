@@ -1,0 +1,132 @@
+h1 {
+    -webkit-animation: aparece 5s ease-in;
+    animation: aparece 5s ease-in;
+}
+
+@-webkit-keyframes aparece {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes aparece {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.citacao-bio {
+    background-color: #D9E5E3;
+    border: .5em solid #C2CCCA;
+    padding: 1em;
+    margin: 1em 2em;
+    width: 30ch;
+    box-sizing: border-box;
+    position: relative;
+    transition: transform 1s linear, box-shadow 1s ease-in-out;
+    transition-delay: 0s, 0s;
+    position: relative;
+    -webkit-animation: quica 1s infinite;
+    animation: quica 1s infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;  
+}
+
+@-webkit-keyframes quica {
+    from {
+        top: 0;
+    }
+    to {
+        top: 1em;
+    }
+}
+
+@keyframes quica {
+    from {
+        top: 0;
+    }
+    to {
+        top: 1em;
+    }
+}
+
+.citacao-bio p {
+    position: relative;
+}
+
+.container > p:first-letter {
+    font-size: 2em;
+    color: #3C1D3D;
+    font: bold;
+    text-shadow: 0.1em 0.1em 4px #000;
+}
+
+blockquote::before {
+    content: "“";
+    font-size: 10em;
+    color: #bbb;
+    position: absolute;
+    top: -50px;
+}
+
+.container blockquote {
+    float: right;
+    margin-right: 0;
+}
+
+.container blockquote:nth-of-type(2n) {
+    float: left;
+    margin-right: 2em;
+    margin-left: 0;
+}
+
+.citacao-bio:hover , .citacao-bio:focus {
+    transform: rotate(12deg) scale(1.5);
+    -webkit-box-shadow: 0 0 0 9999em rgba(0, 0 , 0, .7);
+            box-shadow: 0 0 0 9999em rgba(0, 0 , 0, .7);
+    z-index: 999999;
+    box-sizing: border-box;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+.habilidades {
+    border-collapse: separate;
+    border-spacing: .25em;
+    margin: 1em 0;
+}
+
+.habilidades th {
+    font-weight: bold;
+    background-color: #851944;
+    color: white;
+}
+
+.habilidades td {
+    background-color: #eee;
+}
+
+.habilidades th,
+.habilidades td {
+    padding: 1em;
+}
+
+.habilidades thead th {
+    background-color: #3C1D3D;
+}
+
+.habilidades [colspan] {
+    text-align: center;
+    font-style: italic;
+}
+.habilidades [rowspan] {
+    vertical-align: middle;
+}
